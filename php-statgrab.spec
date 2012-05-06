@@ -11,6 +11,7 @@ License:	PHP License
 URL:		http://pecl.php.net/package/statgrab
 Source0:	http://pecl.php.net/get/Statgrab-%{version}.tgz
 Patch0:		Statgrab-0.6.0-version_fix.diff
+Patch1:		Statgrab-0.6.0-php54x.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libstatgrab-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -27,6 +28,7 @@ library.
 %setup -q -n Statgrab-%{version}
 [ "../package*.xml" != "/" ] && mv -f ../package*.xml .
 %patch0 -p0
+%patch1 -p0
 
 # lib64 fixes
 perl -pi -e "s|/lib\b|/%{_lib}|g" config.m4
