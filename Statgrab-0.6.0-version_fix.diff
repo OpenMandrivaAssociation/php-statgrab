@@ -1,0 +1,11 @@
+--- statgrab.c	2006-11-07 23:14:38.000000000 +0100
++++ statgrab.c.oden	2008-11-21 16:21:37.000000000 +0100
+@@ -30,7 +30,7 @@
+ #include "ext/standard/php_string.h" /* needed for php_explode */
+ #include "php_statgrab.h"
+ 
+-#define PHP_STATGRAB_VERSION "0.5"
++#define PHP_STATGRAB_VERSION "0.6.0"
+ 
+ #define PHP_SG_ADD_FVAL(rtz, key, val)	add_assoc_double_ex(rtz, key, sizeof(key), val);
+ #define PHP_SG_ADD_LVAL(rtz, key, val)	add_assoc_long_ex(rtz, key, sizeof(key), val);
