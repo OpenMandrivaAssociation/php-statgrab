@@ -8,7 +8,7 @@ Version:	0.6.0
 Release:	21
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/statgrab
+URL:		https://pecl.php.net/package/statgrab
 Source0:	http://pecl.php.net/get/Statgrab-%{version}.tgz
 Patch0:		Statgrab-0.6.0-version_fix.diff
 Patch1:		Statgrab-0.6.0-php54x.diff
