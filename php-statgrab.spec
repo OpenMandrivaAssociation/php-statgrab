@@ -12,6 +12,11 @@ URL:		https://pecl.php.net/package/statgrab
 Source0:	http://pecl.php.net/get/Statgrab-%{version}.tgz
 Patch0:		Statgrab-0.6.0-version_fix.diff
 Patch1:		Statgrab-0.6.0-php54x.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libstatgrab-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
